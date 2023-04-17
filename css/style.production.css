@@ -20,6 +20,19 @@
 
 .about-main {
     text-align: center;
+    margin: 20px;
+}
+
+.work-h1 {
+    text-align: center;
+}
+
+.image-wrapper {
+    margin-top: 20px;
+}
+
+#about-picture {
+    max-width: 75%;
 }
 
 .contact-main {
@@ -71,6 +84,10 @@ a:active {
     color: #ffafaf;
 }
 
+.a-button {
+    text-decoration: none;
+}
+
 .profile {
     max-width: 700px;
     margin: 0 auto;
@@ -86,7 +103,7 @@ a:active {
 button {
     /* overwrites browser defaults and resets the border */
     border: none;
-    display: inline-block;
+    display: inline;
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
@@ -101,12 +118,14 @@ button {
     -webkit-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
 .button {
     /* overwrites browser defaults and resets the border */
     border: none;
-    display: inline-block;
+    display: inline;
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
@@ -121,11 +140,14 @@ button {
     -webkit-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   .button__secondary {
     background-color: #ecb07e;
     color: #2b2b2b;
+    text-decoration: none;
   }
 
   button:hover, button:focus, .button:hover, .button:focus {
@@ -167,11 +189,13 @@ button {
     }
 
     .grid__item {
-        background-color: #fff;
+        background-color: #e2f7e2;
         padding: 15px;
         width: auto;
         min-height: auto;
         margin: 0;
+        border-style: solid;
+        border-color: #aed5d5;
     }
 
     .grid__item:last-child {

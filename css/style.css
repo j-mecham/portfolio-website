@@ -5,6 +5,8 @@
     --background-color: #dbefef;
     --button-secondary: #ecb07e;
     --button-secondary-text: #2b2b2b;
+    --background-secondary: #e2f7e2;
+    --border-color: #aed5d5;
     --black: #000;
     --white: #fff;
 }
@@ -23,6 +25,19 @@
 
 .about-main {
     text-align: center;
+    margin: 20px;
+}
+
+.work-h1 {
+    text-align: center;
+}
+
+.image-wrapper {
+    margin-top: 20px;
+}
+
+#about-picture {
+    max-width: 75%;
 }
 
 .contact-main {
@@ -68,6 +83,10 @@ a:active {
     color: var(--link-active);
 }
 
+.a-button {
+    text-decoration: none;
+}
+
 .profile {
     max-width: 700px;
     margin: 0 auto;
@@ -84,7 +103,7 @@ button,
 .button {
     /* overwrites browser defaults and resets the border */
     border: none;
-    display: inline-block;
+    display: inline;
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
@@ -97,11 +116,14 @@ button,
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     transition: opacity 0.2s;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   .button__secondary {
     background-color: var(--button-secondary);
     color: var(--button-secondary-text);
+    text-decoration: none;
   }
 
   button:hover, button:focus, .button:hover, .button:focus {
@@ -141,11 +163,13 @@ button,
     }
 
     .grid__item {
-        background-color: var(--white);
+        background-color: var(--background-secondary);
         padding: 15px;
         width: auto;
         min-height: auto;
         margin: 0;
+        border-style: solid;
+        border-color: var(--border-color);
     }
 
     .grid__item:last-child {
