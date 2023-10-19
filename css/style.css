@@ -99,6 +99,11 @@ a:active {
     border-radius: 50%;
 }
 
+.thumbnail {
+    max-width: 100%;
+}
+
+
 button,
 .button {
     /* overwrites browser defaults and resets the border */
