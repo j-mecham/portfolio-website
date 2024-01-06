@@ -103,6 +103,10 @@ a:active {
     max-width: 100%;
 }
 
+.grid a {
+    text-decoration: none;
+}
+
 
 button,
 .button {
